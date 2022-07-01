@@ -13,7 +13,11 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
     return {
-        paths: [],
+        paths: [
+            {params: {comp: "test1"}},
+            {params: {comp: "test2"}},
+            {params: {comp: "test3"}}
+        ],
         fallback: "blocking",
     };
 }
