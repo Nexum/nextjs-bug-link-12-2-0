@@ -6,8 +6,7 @@ export async function getStaticProps(context) {
     const {comp} = context.params;
     return {
         props: {
-            active: "test/[comp].js",
-            dynamicComp: comp,
+            active: `test/${comp}`,
         },
     };
 }
